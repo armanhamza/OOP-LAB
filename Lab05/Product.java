@@ -6,7 +6,12 @@ public class Product{
 	static double maxValue=0;
 	static double minValue=0;
 	private static int count=1;
+	private Date mfd;
+
 Product(String name,double price,int qty){
+	this(name,price,qty,new Date(1,1,1));
+}
+Product(String name,double price,int qty,Date mfd){
 	this.name=name;
 	this.price=price;
 	this.qty=qty;
@@ -14,7 +19,6 @@ Product(String name,double price,int qty){
 	if(maxValue < price){ maxValue=price;}
 	if(minValue > price){ minValue=price;}
 	else if(minValue == 0){ minValue=price;}
-
 
 }
 
@@ -25,5 +29,6 @@ void Display(){
 	System.out.println("Price :"+price);
 	System.out.println("Max :"+maxValue);
 	System.out.println("Min :"+minValue);
+	System.out.println("Manufacturing Date : %s \n"," "+mfd.displayDate());
 }
 }
