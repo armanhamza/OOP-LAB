@@ -9,7 +9,7 @@ public class Demo{
 	p3.Display();
 	Product p4= new Product("Abdullah",7000,13);
 	p4.Display();
-	Product p5= new Product("Abdullah",7000,13,new Date(16,9,2026));
+	Product p5= new Product("Abdullah",7000,13,new Date(16,9,06));
 	p5.Display1();
 
 }
