@@ -10,7 +10,7 @@ public class Bus{
 
     public Bus(String busNumber, int rows) {
         if (rows < 1) {
-            throw new IllegalArgumentException("A bus must have at least 1 row,got" + rows);
+            System.out.println("A bus must have at least 1 row,got" + rows);
         }
         this.busNumber = busNumber;
         this.seats = new Seat[rows][SEATS_PER_ROW];
